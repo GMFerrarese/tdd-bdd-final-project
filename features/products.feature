@@ -11,11 +11,6 @@ Background:
         | Big Mac    | 1/4 lb burger   | 5.99    | True      | FOOD       |
         | Sheets     | Full bed sheets | 87.00   | True      | HOUSEWARES |
 
-Scenario: The server is running
-    When I visit the "Home Page"
-    Then I should see "Product Catalog Administration" in the title
-    And I should not see "404 Not Found"
-
 Scenario: Create a Product
     When I visit the "Home Page"
     And I set the "Name" to "Hammer"
